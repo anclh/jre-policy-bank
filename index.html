@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="JRE Policy Bank — interview-oriented Hong Kong policy current affairs from public government sources" />
+  <title>JRE Policy Bank · JRE 政策資料庫</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">JRE</div>
+        <div>
+          <h1>JRE Policy Bank</h1>
+          <p data-i18n="subtitle">面試取向時事／政策資料庫（公開政府來源）</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="view-toggle" role="group" aria-label="View">
+          <button type="button" data-view="browse" class="active" data-i18n="browse">瀏覽</button>
+          <button type="button" data-view="digest" data-i18n="digest">每周摘要</button>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="zh" class="active">中</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2 data-i18n="heroTitle">搜尋近期香港政策動向</h2>
+      <p class="lede" data-i18n="heroLede">關鍵字搜尋、政策局／署過濾、主題標籤、摘要與面試角度——素材來自 info.gov.hk 等公開公報，非任何收費資料庫內容。</p>
+      <p class="disclaimer" data-i18n="disclaimer">免責：本工具僅供面試備試參考。摘要與面試角度為原創整理，請以原文公報為準。與 CS Radar 無關，亦未使用其付費內容。</p>
+
+      <div class="search-bar">
+        <input id="search" type="search" autocomplete="off" placeholder="搜尋標題、摘要、部門、主題…" aria-label="Search" />
+        <button type="button" class="clear-btn" id="clearSearch" data-i18n="clear">清除</button>
+      </div>
+
+      <div class="filters">
+        <div class="filter-row">
+          <div class="filter-label" data-i18n="depts">政策局／部門</div>
+          <div class="chips" id="deptChips"></div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-label" data-i18n="themes">政策主題</div>
+          <div class="chips" id="themeChips"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="browse">
+      <div class="toolbar">
+        <div class="count" id="count">結果: —</div>
+        <label class="sort">
+          <span data-i18n="sortLabel">排序</span>
+          <select id="sort">
+            <option value="newest" data-i18n="newest">最新優先</option>
+            <option value="oldest" data-i18n="oldest">最舊優先</option>
+          </select>
+        </label>
+      </div>
+      <div class="cards" id="cards" aria-live="polite"></div>
+    </section>
+
+    <section id="digest" class="digest" aria-live="polite">
+      <div class="digest-intro">
+        <h2 data-i18n="digestTitle">近14天按部門／局別整理</h2>
+        <p class="lede" data-i18n="digestLede">將最近兩周的政策項目按部門分組，方便快速複習。</p>
+      </div>
+      <div id="digestBody"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    JRE Policy Bank · Public HK government / LegCo sources only · Seed updated 2026-10-20
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
