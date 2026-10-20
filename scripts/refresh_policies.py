@@ -42,28 +42,36 @@ BASE = "https://www.info.gov.hk"
 KEEP_RE = re.compile(
     r"房屋|公屋|簡約公屋|居屋|土地|賣地|收地|發展局|北部都會|新發展區|河套|"
     r"財經|金融|金管局|人民幣|債券|財政司|庫務|稅務|預算|"
-    r"醫務|衞生|衛生|藥物|醫療|醫院管理局|醫管局|基層醫療|"
-    r"勞工|福利|扶貧|精準扶貧|共創|幸匯|最低工資|強積金|外傭|補充勞工|"
+    r"醫務|衞生|衛生|藥物|醫療|醫院管理局|醫管局|基層醫療|中醫醫院|精神健康|"
+    r"勞工|福利|扶貧|精準扶貧|共創|幸匯|最低工資|強積金|外傭|補充勞工|平台工作者|"
     r"創科|創新科技|工業|人工智能|智能|數碼港|科技園|新型工業|微電子|"
     r"條例草案|刊憲|立法會|施政報告|五年規劃|"
-    r"政務司|行政長官|管治|政策|規劃署|產業|物流|運輸及物流|"
+    r"政務司|行政長官|管治|政策|規劃署|產業|物流|運輸及物流|網約車|"
     r"大灣區|跨境|口岸|基建|鐵路|調解|知識產權|業權註冊|"
     r"公務員|選舉委員會|律政|司法|"
+    r"教育|教育局|大學城|數字教育|STEAM|學額|宿舍|"
+    r"安老|長者|院舍|照顧者|高齡化|樂齡|"
+    r"青年|青年發展|實習計劃|民青局|"
+    r"環境|生態|減廢|回收|零碳|電動車|氣候|氫能|I·PARK|綠在區區|"
+    r"智方便|數字政府|數字政策|智慧城市|一網通辦|AI城市大腦|"
+    r"文化體育|文體旅|旅遊|西九|盛事|訪港旅客|票尾|"
+    r"體育|啟德體育|體育總會|精英運動|"
     r"Housing|Land sale|Finance|Monetary|Health Bureau|Labour|"
     r"Welfare|Innovation|Northern Metropolis|Policy Address|"
+    r"education|elderly|youth|environment|climate|iAM Smart|tourism|sports|"
     r"Bill 20|gazett|Treasury|fintech|MPF|title registration",
     re.I,
 )
 
 DROP_RE = re.compile(
     r"泳灘|紅旗|黃旗|天氣警告|熱帶氣旋|颱風|暴雨|"
-    r"獎牌|亞運|殘運|奧運|演唱會|電影節|演藝|慈善放映|"
+    r"奪得.*獎牌|獎牌榜|亞運.*金牌|殘運.*獎牌|奧運.*獎牌|演唱會門票|電影首映禮|慈善放映|"
     r"走私|私煙|冒牌|食安中心檢出|檢獲約|毒品|"
     r"哀悼|訃告|悼念|離世|"
     r"交通意外|被控|謀殺|搶劫|判囚|罰款逾|罪成|"
     r"重陽節翌日假期.*門診|家庭醫學門診服務安排|"
     r"可疑電郵|聖誕.*郵件|攤位拍賣|年宵|"
-    r"beach|red flag|weather|typhoon|medal|concert|obituar|"
+    r"beach|red flag|weather|typhoon|medal tally|concert ticket|obituar|"
     r"smuggl|counterfeit|drug trafficking|jailed for|"
     r"Air Quality Health Index|Christmas air mail|fair stalls|^附件$|^Appendix$|國際刑警組織.*全體大會|瀕危物種|endangered species",
     re.I,
@@ -95,23 +103,36 @@ DEPT_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("doj", re.compile(r"律政司|調解\(修訂\)|司法文書|Department of Justice|\bSJ\b")),
     ("legco", re.compile(r"立法會|LegCo|條例草案.*提交")),
     ("sb", re.compile(r"保安局|Security Bureau")),
-    ("hyab", re.compile(r"民政及青年事務局|青年實習|HYAB")),
-    ("eeb", re.compile(r"環境及生態局|Environment and Ecology")),
+    ("hyab", re.compile(r"民政及青年事務局|青年實習|青年發展委員會|HYAB")),
+    ("eeb", re.compile(r"環境及生態局|環保署|Environment and Ecology")),
+    ("edb", re.compile(r"教育局|大學城|數字教育|Education Bureau|\bEDB\b")),
+    ("cstb", re.compile(r"文化體育及旅遊局|文體旅|旅發局|康文署|Culture, Sports and Tourism|\bCSTB\b")),
+    ("dpo", re.compile(r"數字政策辦公室|智方便|Digital Policy Office|iAM Smart")),
+    ("swd", re.compile(r"社會福利署|Social Welfare Department|\bSWD\b")),
     ("investHK", re.compile(r"投資推廣署|InvestHK|Invest Hong Kong")),
 ]
 
 THEME_RULES: list[tuple[str, re.Pattern[str]]] = [
+    # Specific themes first (map_themes keeps first matches, max 3)
     ("northern-metropolis", re.compile(r"北部都會|新田|牛潭尾|洪水橋|河套|Northern Metropolis")),
+    ("education", re.compile(r"教育|教育局|大學城|數字教育|STEAM|學額|學生宿舍|國際學校|Education Bureau|Study in Hong Kong")),
+    ("elderly-care", re.compile(r"安老|長者社區|長者院舍|院舍照顧|樂齡|高齡化|廣東院舍|居家安老|elderly care|ageing")),
+    ("youth", re.compile(r"青年發展|青年職位|青年實習|青年人才|民青局|青年發展委員會|Youth Development|youth internship")),
+    ("environment-climate", re.compile(r"環境及生態|減廢|回收|零碳|電動車|氣候|氫能|I·PARK|綠在區區|淨零|碳中和|Environment and Ecology|climate")),
+    ("national-development", re.compile(r"大灣區|國家發展|粵港澳|規則銜接|十五五|一帶一路|前海|南沙|皇崗|Greater Bay Area|GBA")),
+    ("digital-gov", re.compile(r"智方便|數字政府|數字政策|智慧城市|一網通辦|AI城市大腦|iAM Smart|Digital Policy|smart city")),
+    ("culture-tourism", re.compile(r"文化體育及旅遊|文體旅|旅遊|西九|訪港旅客|票尾|盛事\+旅遊|一程多站|電影\+旅遊|tourism|West Kowloon")),
+    ("sports", re.compile(r"體育園|體育總會|精英運動|啟德體育|體育行政|全港運動會|sports park|National Sports Association")),
     ("housing-land", re.compile(r"房屋|公屋|簡約公屋|土地|賣地|收地|業權註冊|Housing|land sale")),
     ("finance", re.compile(r"金融|財經|金管局|人民幣|債券|稅務|財政司|Exchange Fund|Treasury")),
     ("fintech-ai", re.compile(r"人工智能|AI|金融科技|數智|智能體|fintech")),
-    ("healthcare", re.compile(r"醫療|衞生|衛生|藥物|醫院|基層醫療|Health|MPOX|流感")),
+    ("healthcare", re.compile(r"醫療|衞生|衛生|藥物|醫院|基層醫療|中醫醫院|精神健康|醫健通|Health|MPOX|流感")),
     ("innovation", re.compile(r"創科|創新科技|新型工業|科技園|數碼港|知識產權|微電子|I&T")),
-    ("poverty-welfare", re.compile(r"扶貧|福利|幸匯|共創|照顧者|劏房|安老|高齡化|Welfare|poverty")),
-    ("labour", re.compile(r"勞工|最低工資|強積金|外傭|補充勞工|MPF|Labour")),
+    ("poverty-welfare", re.compile(r"扶貧|福利|幸匯|共創|照顧者|劏房|Welfare|poverty")),
+    ("labour", re.compile(r"勞工|最低工資|強積金|外傭|補充勞工|平台工作者|MPF|Labour")),
     ("legislation", re.compile(r"條例草案|刊憲|附屬法例|Bill |gazett")),
-    ("governance", re.compile(r"施政報告|五年規劃|行政長官|政務司|管治|選舉|大灣區|Policy Address")),
-    ("transport-logistics", re.compile(r"運輸|物流|航運|口岸|跨境|鐵路|機場|港口")),
+    ("governance", re.compile(r"施政報告|五年規劃|行政長官|政務司|管治|選舉|Policy Address")),
+    ("transport-logistics", re.compile(r"運輸|物流|航運|口岸|跨境|鐵路|機場|港口|網約車|六號幹線")),
 ]
 
 NEW_DEPTS = {
@@ -122,6 +143,10 @@ NEW_DEPTS = {
     "sb": {"id": "sb", "zh": "保安局", "en": "Security Bureau"},
     "hyab": {"id": "hyab", "zh": "民政及青年事務局", "en": "Home and Youth Affairs Bureau"},
     "eeb": {"id": "eeb", "zh": "環境及生態局", "en": "Environment and Ecology Bureau"},
+    "edb": {"id": "edb", "zh": "教育局", "en": "Education Bureau"},
+    "cstb": {"id": "cstb", "zh": "文化體育及旅遊局", "en": "Culture, Sports and Tourism Bureau"},
+    "dpo": {"id": "dpo", "zh": "數字政策辦公室", "en": "Digital Policy Office"},
+    "swd": {"id": "swd", "zh": "社會福利署", "en": "Social Welfare Department"},
     "investHK": {"id": "investHK", "zh": "投資推廣署", "en": "Invest Hong Kong"},
 }
 
@@ -131,6 +156,30 @@ NEW_THEMES = {
         "zh": "運輸與物流",
         "en": "Transport & Logistics",
     },
+    "education": {"id": "education", "zh": "教育", "en": "Education"},
+    "elderly-care": {"id": "elderly-care", "zh": "安老與照顧", "en": "Elderly Care"},
+    "youth": {"id": "youth", "zh": "青年發展", "en": "Youth Development"},
+    "environment-climate": {
+        "id": "environment-climate",
+        "zh": "環境與氣候",
+        "en": "Environment & Climate",
+    },
+    "national-development": {
+        "id": "national-development",
+        "zh": "國家發展與大灣區",
+        "en": "National Development & GBA",
+    },
+    "digital-gov": {
+        "id": "digital-gov",
+        "zh": "數字政府／智慧城市",
+        "en": "Digital Government / Smart City",
+    },
+    "culture-tourism": {
+        "id": "culture-tourism",
+        "zh": "文化旅遊",
+        "en": "Culture & Tourism",
+    },
+    "sports": {"id": "sports", "zh": "體育", "en": "Sports"},
 }
 
 
@@ -289,6 +338,12 @@ def policy_score(title: str) -> int:
         (25, r"強積金|最低工資|補充勞工"),
         (22, r"藥物|「1\+」|醫療產品監管"),
         (18, r"大灣區|跨境|口岸"),
+        (28, r"教育|大學城|數字教育|STEAM"),
+        (28, r"安老|長者.*券|廣東院舍|高齡化"),
+        (28, r"青年職位|青年實習|青年發展"),
+        (28, r"減廢|零碳|電動車|氣候|回收"),
+        (26, r"智方便|數字政府|AI城市大腦"),
+        (26, r"文體旅|西九|訪港旅客|體育園|體育總會"),
         (15, r"調解|業權註冊|知識產權"),
         (10, r"致辭|會面|出席"),
     ]

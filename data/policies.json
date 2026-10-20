@@ -91,6 +91,46 @@
       "id": "investHK",
       "zh": "投資推廣署",
       "en": "Invest Hong Kong"
+    },
+    {
+      "id": "edb",
+      "zh": "教育局",
+      "en": "Education Bureau"
+    },
+    {
+      "id": "hyab",
+      "zh": "民政及青年事務局",
+      "en": "Home and Youth Affairs Bureau"
+    },
+    {
+      "id": "eeb",
+      "zh": "環境及生態局",
+      "en": "Environment and Ecology Bureau"
+    },
+    {
+      "id": "cstb",
+      "zh": "文化體育及旅遊局",
+      "en": "Culture, Sports and Tourism Bureau"
+    },
+    {
+      "id": "dpo",
+      "zh": "數字政策辦公室",
+      "en": "Digital Policy Office"
+    },
+    {
+      "id": "swd",
+      "zh": "社會福利署",
+      "en": "Social Welfare Department"
+    },
+    {
+      "id": "ha",
+      "zh": "醫院管理局",
+      "en": "Hospital Authority"
+    },
+    {
+      "id": "sb",
+      "zh": "保安局",
+      "en": "Security Bureau"
     }
   ],
   "themes": [
@@ -148,6 +188,46 @@
       "id": "transport-logistics",
       "zh": "運輸與物流",
       "en": "Transport & Logistics"
+    },
+    {
+      "id": "education",
+      "zh": "教育",
+      "en": "Education"
+    },
+    {
+      "id": "elderly-care",
+      "zh": "安老與照顧",
+      "en": "Elderly Care"
+    },
+    {
+      "id": "youth",
+      "zh": "青年發展",
+      "en": "Youth Development"
+    },
+    {
+      "id": "environment-climate",
+      "zh": "環境與氣候",
+      "en": "Environment & Climate"
+    },
+    {
+      "id": "national-development",
+      "zh": "國家發展與大灣區",
+      "en": "National Development & GBA"
+    },
+    {
+      "id": "digital-gov",
+      "zh": "數字政府／智慧城市",
+      "en": "Digital Government / Smart City"
+    },
+    {
+      "id": "culture-tourism",
+      "zh": "文化旅遊",
+      "en": "Culture & Tourism"
+    },
+    {
+      "id": "sports",
+      "zh": "體育",
+      "en": "Sports"
     }
   ],
   "items": [
@@ -432,6 +512,28 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20261014-iamsmart-ai-assistant",
+      "date": "2026-10-14",
+      "title": "「智方便」推出「AI助手」功能解答公共服務查詢",
+      "title_en": "iAM Smart launches AI Assistant for public service enquiries",
+      "departments": [
+        "dpo",
+        "itib"
+      ],
+      "themes": [
+        "digital-gov",
+        "fintech-ai"
+      ],
+      "summary": "數字政策辦公室公布「智方便」推出「AI助手」，從官方渠道即時整理公共服務資訊，並可列出申請條件、步驟及服務連結，配合「填表通」完成申請。全新5.0版本流動應用程式於2026年10月中下旬推送；數字辦預計同年年底推出「AI助手」加強版，提供個人化服務。此舉把「一網通辦」由入口整合推進至智能導航。",
+      "interview_angles": [
+        "AI助手回覆若出錯，責任歸屬與人工覆核機制如何設計？",
+        "個人化服務加強版如何處理敏感個人資料與演算法歧視風險？",
+        "對1823及部門熱線工作量的替代效應，如何量度服務質素不降？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400475.htm",
+      "source_name": "info.gov.hk / Digital Policy Office"
+    },
+    {
       "id": "20261014-700327",
       "date": "2026-10-14",
       "title": "「創科加速器先導計劃」九宗項目獲評審委員會支持",
@@ -682,6 +784,51 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20261009-huanggang-open",
+      "date": "2026-10-09",
+      "title": "皇崗口岸定於2026年10月12日正式開通　提供24小時通關",
+      "title_en": "Huanggang Port to open on 12 Oct 2026 with 24-hour clearance",
+      "departments": [
+        "sb",
+        "tlb"
+      ],
+      "themes": [
+        "national-development",
+        "transport-logistics",
+        "governance"
+      ],
+      "summary": "香港特區政府保安局與深圳市人民政府口岸辦公室聯合公布，皇崗口岸定於2026年10月12日上午6時30分正式開通運行，為旅客和客運車輛提供24小時通關服務，並暫停往來深圳皇崗口岸臨時旅檢樓與香港落馬洲管制站的旅檢服務。口岸實施「一地兩檢」及「合作查驗、一次放行」模式，標誌深港口岸融合與大灣區人流物流效率再進一步。",
+      "interview_angles": [
+        "24小時通關對北區交通、房屋需求及跨境上班族的結構性影響是什麼？",
+        "「一地兩檢」模式下，兩地執法銜接與旅客權益投訴渠道如何清晰？",
+        "落馬洲旅檢暫停後，替代路線容量是否足夠應對高峰？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202610/09/P2026100900280.htm",
+      "source_name": "info.gov.hk / Security Bureau"
+    },
+    {
+      "id": "20260930-sports-nso-governance",
+      "date": "2026-09-30",
+      "title": "文體旅局：體育總會管治與資助掛鈎　推動大灣區體育交流",
+      "title_en": "CSTB: NSO governance linked to funding; GBA sports exchanges",
+      "departments": [
+        "cstb"
+      ],
+      "themes": [
+        "sports",
+        "national-development",
+        "governance"
+      ],
+      "summary": "文體旅局在立法會政策簡報會表示，港協暨奧委會將於明年初按各體育總會執行《機構管治守則》情況發出確認證書，日後政府資助與合規掛鈎。同時支持三年「體育行政人員培訓計劃」、優化全港運動會內容，並推動大灣區聯賽等交流。五年規劃目標包括文藝創意產業增加價值提升、全職精英運動員人數五年累計增加約20%。",
+      "interview_angles": [
+        "資助與管治合規掛鈎，小型體育總會會否因合規成本而被邊緣化？",
+        "大灣區聯賽對本地聯賽觀眾與商業贊助是增益還是分流？",
+        "精英運動員增20%的配套（退役出路、傷患保障）是否同步？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/30/P2026093000581.htm",
+      "source_name": "info.gov.hk / Culture, Sports and Tourism Bureau"
+    },
+    {
       "id": "20260929-nm-finance",
       "date": "2026-09-29",
       "title": "財庫局局長率金融界代表團考察北部都會區",
@@ -702,6 +849,251 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/29/P2026092900318.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20260921-eeb-green-transition",
+      "date": "2026-09-21",
+      "title": "環境及生態局闡述五年規劃綠色轉型：零碳電力、減廢與生態紅線",
+      "title_en": "EEB on Five-Year Plan green transition: zero-carbon power, waste, ecology",
+      "departments": [
+        "eeb"
+      ],
+      "themes": [
+        "environment-climate",
+        "national-development",
+        "governance"
+      ],
+      "summary": "環境及生態局局長就《香港第一個五年規劃》及2026年《施政報告》說明：力爭2035年前將零碳電力由約四分之一提升至六至七成，2050年前「淨零發電」；電動車逾18萬輛、充電系統可支援最少27萬輛；都市固體廢物棄置量連續四年下降、回收率由28%升至34%；I·PARK1年內全面運作，邁向2035年前「零廢堆填」。另透過4億元低碳綠色科研基金支援綠色科技，2027年啟動「綠色科技橋頭堡計劃」。",
+      "interview_angles": [
+        "2035年前零碳電力六至七成，對電價穩定與能源安全的取捨是什麼？",
+        "無需I·PARK3亦可「零廢堆填」的假設條件是什麼？若回收率停滯怎辦？",
+        "電動車充電以高速樁為骨幹，舊樓／劏房住戶如何受惠？",
+        "四年減廢成績如何轉化為可問責的年度KPI？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/21/P2026092100388.htm",
+      "source_name": "info.gov.hk / Environment and Ecology Bureau"
+    },
+    {
+      "id": "20260919-cstb-culture-tourism",
+      "date": "2026-09-19",
+      "title": "文體旅局闡述五年規劃：西九演藝中心、藝團資助改革與「+旅遊」",
+      "title_en": "CSTB on Five-Year Plan: WestK PAC, arts funding reform, +tourism",
+      "departments": [
+        "cstb"
+      ],
+      "themes": [
+        "culture-tourism",
+        "sports"
+      ],
+      "summary": "文化體育及旅遊局局長介紹：西九演藝中心將於2027年啟用，新增四個國際級表演場地；西九2027-28年度預計舉行逾1 000項節目、吸引約40萬名觀眾。政府建議向藝術及體育發展基金（藝術部分）注資2億元，並由2027-28年度起改革藝團資助制度，引入與表現掛鈎的撥款及進出機制。旅遊方面推動「盛事+旅遊」「電影+旅遊」等聯動，深化「一程多站」。",
+      "interview_angles": [
+        "藝團資助與表現掛鈎，如何避免「討好評審、壓抑實驗創作」？",
+        "西九硬件落成後，軟件人才與票價可負擔性如何並行？",
+        "「+旅遊」聯動如何把盛事人流轉化為社區商戶可持續收益？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/19/P2026091900376.htm",
+      "source_name": "info.gov.hk / Culture, Sports and Tourism Bureau"
+    },
+    {
+      "id": "20260917-hsk-university-town",
+      "date": "2026-09-17",
+      "title": "政府推出洪水橋大學城校園區用地供專上院校申請",
+      "title_en": "Hung Shui Kiu University Town campus sites open for post-secondary institutions",
+      "departments": [
+        "edb",
+        "ceo"
+      ],
+      "themes": [
+        "education",
+        "northern-metropolis",
+        "national-development"
+      ],
+      "summary": "政府公布推出三幅合共約26公頃的洪水橋大學城校園區用地，供合資格專上院校申請，並提供貸款安排支持校舍建設。北都新田、洪水橋及打鼓嶺三個大學城以「一城五元素」（教育、科技、產業、人才、城市建設）布局，校園區總面積約300公頃，連同周邊科技與產業區總體規劃面積超過1 000公頃。申請截止日期為2026年12月31日，用地將以私人協約、象徵式地價批出。",
+      "interview_angles": [
+        "北都大學城「一城五元素」如何避免變成「只有校舍、缺少產業與生活配套」？",
+        "洪水橋約26公頃校園用地以象徵式地價批出，如何確保院校有足夠誘因及責任推進教研產業化？",
+        "三個大學城如何分工定位，避免院校申請重疊或資源浪費？",
+        "措施對香港「國際教育樞紐」定位與非本地生容納力有何可量化影響？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/17/P2026091700492.htm",
+      "source_name": "info.gov.hk / Education Bureau"
+    },
+    {
+      "id": "20260916-youth-intl-it",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：青年走向國際與創科培訓新通路",
+      "title_en": "2026 Policy Address: youth international exchanges and I&T training pathways",
+      "departments": [
+        "hyab",
+        "itib",
+        "edb"
+      ],
+      "themes": [
+        "youth",
+        "innovation",
+        "national-development"
+      ],
+      "summary": "民青局將成立「國際青年人才交流基地」，推出聯合國青年領袖實習，並開展金融專題內地實習、航天專題培訓、中國科學院高端科研實習及AI體驗活動。科技園「Talent Foundry」預計每年約500個AI+及新興科技培訓機會；教資會自2026/27學年起注資1億元，把境外交流計劃重點擴展至「一帶一路」沿線。房委會「共築‧創業家2.0」恆常化，提供15間商舖、逾70個創業機會（約為先導計劃七倍）。",
+      "interview_angles": [
+        "國際交流與內地實習如何轉化為本地就業競爭力？",
+        "Talent Foundry每年約500個名額相對需求是否足夠？篩選準則為何？",
+        "青年創業租金優惠與失敗風險之間，政府角色邊界在哪？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-waste-ipark",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：五年減廢回收計劃與邁向「零廢堆填」",
+      "title_en": "2026 Policy Address: five-year waste plan toward zero landfill",
+      "departments": [
+        "eeb",
+        "ceo"
+      ],
+      "themes": [
+        "environment-climate"
+      ],
+      "summary": "政府自2026-27年度起推行五年減廢回收計劃：「綠在區區」升級為24小時智能自助設施，智能回收箱由約140套陸續增至約3 000套；目標2026年年底全港公屋「一座一桶」廚餘收集，2028年第一季智能廚餘回收桶增至約2 500個。都市固體廢物處置量連續四年下降，2024年回收率升至34%；I·PARK1每日處理3 000公噸都市固體廢物，朝2035年前「零廢堆填」推進。",
+      "interview_angles": [
+        "智能回收箱增至約3 000套後，維修與數據準確度如何監察？",
+        "「一座一桶」在舊式公屋的空間與衛生限制如何解決？",
+        "回收率34%距「零廢堆填」的主要缺口在哪一類廢物？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#waste",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
+    },
+    {
+      "id": "20260916-tourism-stats",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：2025年訪港旅客4 990萬　推動票尾經濟",
+      "title_en": "2026 Policy Address: 49.9 million visitors in 2025; ticket-stub economy",
+      "departments": [
+        "cstb",
+        "ceo"
+      ],
+      "themes": [
+        "culture-tourism",
+        "national-development"
+      ],
+      "summary": "2025年全年訪港旅客達4 990萬人次，按年增長12%；預計2026年入境旅遊相關總消費達2,381億元。經香港前往內地的海外旅客比例於2026年上半年已超過兩成。政府布局三大主題盛事季、推動票尾經濟與「一程多站」，並擴展導遊「專項專牌」至歷史文化深度遊；「港艇北上」已首航，同步推進「粵艇南下」。",
+      "interview_angles": [
+        "如何提升人均消費與過夜日數而非只追人次？",
+        "票尾經濟對基層零售餐飲滲透率如何評估？",
+        "過度依賴過境客會否削弱終點 dest. 品牌？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#tourism",
+      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
+    },
+    {
+      "id": "20260916-tourism-49-9m",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：2025年訪港旅客4 990萬　推展票尾經濟與一程多站",
+      "title_en": "2026 Policy Address: 49.9 million visitors in 2025; ticket-stub economy",
+      "departments": [
+        "cstb",
+        "ceo"
+      ],
+      "themes": [
+        "culture-tourism",
+        "national-development"
+      ],
+      "summary": "2025年全年訪港旅客達4 990萬人次，按年增長12%；預計2026年與入境旅遊相關總消費達2,381億元。經香港前往內地的海外旅客比例於2026年上半年已超過兩成。政府推動票尾經濟、三大主題盛事季布局，並深化「一程多站」；旅遊業監管局將擴展「專項專牌」至歷史文化深度遊。遊艇經濟方面，「港艇北上」已首航，並推進「粵艇南下」。",
+      "interview_angles": [
+        "旅客量回升後，如何提升人均消費與過夜日數而非只追人次？",
+        "票尾經濟對基層零售餐飲的實際滲透率如何評估？",
+        "過度依賴「一程多站」過境客，會否削弱香港作為終點 dest. 的品牌？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm",
+      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
+    },
+    {
+      "id": "20260916-saf-aviation",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：可持續航空燃料產業鏈與綠色航運走廊",
+      "title_en": "2026 Policy Address: SAF supply chain and green shipping energy corridor",
+      "departments": [
+        "tlb",
+        "eeb",
+        "cedb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "environment-climate",
+        "national-development"
+      ],
+      "summary": "政府已帶領可持續航空燃料（SAF）生產基地落戶東莞，目標2030年前投產，並籌劃在港建設首個SAF混合設施；同時研究設立強制使用比例及綠色能源認證制度。航運方面公布以香港為中心構建「綠色能源走廊」，推動高增值海運服務及綠色船用燃料加注。措施串連航空樞紐、綠色燃料與大灣區產業布局。",
+      "interview_angles": [
+        "SAF強制使用比例若落實，票價與航線競爭力如何平衡？",
+        "跨境SAF產業鏈的監管與稅務如何協調？",
+        "綠色航運走廊對傳統燃油加注業務的轉型路徑是什麼？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#saf",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-route6",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：六號幹線全線開通　將軍澳至油麻地車程大幅縮短",
+      "title_en": "2026 Policy Address: Route 6 full opening cuts TKO–Yau Ma Tei travel time",
+      "departments": [
+        "tlb",
+        "ceo"
+      ],
+      "themes": [
+        "transport-logistics"
+      ],
+      "summary": "中九龍繞道（九龍灣段）工程將於2026年內完成，標誌六號幹線（含中九龍繞道及將軍澳—藍田隧道）全線開通。預計繁忙時段往來將軍澳及油麻地行車時間由約65分鐘減至約12分鐘。智慧綠色集體運輸系統目標年內批出啟德項目（2031年落成），翌年批出洪水橋／厦村及東九龍項目。",
+      "interview_angles": [
+        "車程縮短會否誘發更多私家車出行而抵消效益？",
+        "六號幹線與房屋／就業分布如何配套？",
+        "智慧綠色集體運輸與重鐵如何避免投資重疊？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#route6",
+      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
+    },
+    {
+      "id": "20260916-ride-hailing",
+      "date": "2026-09-16",
+      "title": "網約車服務規管制度生效　公開邀請平台申請牌照",
+      "title_en": "Ride-hailing regime in force; platforms invited to apply for licences",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "legislation",
+        "labour"
+      ],
+      "summary": "網約車服務規管制度大部分法律條文於2026年8月3日生效，政府正公開邀請平台申請牌照，並於同年第四季開始向司機和車輛發出許可證。運輸署構建網約車數據管理系統監察合規與保障數據安全，並收集數據作日後供求動態評估，目標為市民提供合規安全的個人化點對點交通服務。",
+      "interview_angles": [
+        "牌照與車輛許可證上限如何平衡安全、司機生計與乘客選擇？",
+        "數據系統對平台機密與乘客私隱的保障標準是什麼？",
+        "傳統的士業界轉型支援是否足夠？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#ridehail",
+      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
+    },
+    {
+      "id": "20260916-primary-care",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：強化基層醫療　家庭醫學門診每年約增22萬名額",
+      "title_en": "2026 Policy Address: primary care boost; +220 000 family medicine places a year",
+      "departments": [
+        "hhb",
+        "ha"
+      ],
+      "themes": [
+        "healthcare"
+      ],
+      "summary": "明年起提升灣仔和觀塘地區康健站為地區康健中心；年底起整合長者健康中心服務，評估服務量增逾一倍、最長輪候縮減三分之二。明年起醫管局家庭醫學門診每年約增22萬個名額（含約1萬個夜診）；年底開展社區藥房計劃（首階段四區）。醫健通登記逾650萬人（約佔人口87%）。公營醫療收費改革後，獲全額減免由全年少於1.4萬人增至逾25萬人。",
+      "interview_angles": [
+        "門診大幅增額後，醫生人手與轉介質素如何保證？",
+        "收費改革擴大減免面，長遠財政可持續性如何？",
+        "社區藥房與醫院配藥如何分工？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
     {
       "id": "20260916-policy-address",
@@ -726,6 +1118,214 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600573.htm",
       "source_name": "info.gov.hk / Policy Address"
+    },
+    {
+      "id": "20260916-mental-health",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：推行11項精神健康措施與分層護理模式",
+      "title_en": "2026 Policy Address: 11 mental health measures and stepped-care model",
+      "departments": [
+        "hhb",
+        "edb",
+        "lwb"
+      ],
+      "themes": [
+        "healthcare",
+        "youth",
+        "education"
+      ],
+      "summary": "政府以綜合模式推行11項精神健康措施，包括延續小學三層應急機制、北都增設精神健康綜合社區中心、將「健康心靈先導計劃」推展至所有現有地區康健中心，並接納「精神健康分層護理模式」框架。透過賽馬會「行政長官社會資助計劃」資助項目預計惠及超過3萬人，同時推廣《精神健康職場約章》。",
+      "interview_angles": [
+        "學校三層應急機制如何避免標籤化學生？",
+        "分層護理的跨專業人手標準與輪候指標如何訂？",
+        "職場約章屬自願，如何推動實質改變？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#mental",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
+    },
+    {
+      "id": "20260916-kai-tak-sports",
+      "date": "2026-09-16",
+      "title": "啟德體育園累計逾170場盛事、260萬觀眾　研究重建維園網球主場",
+      "title_en": "Kai Tak Sports Park 170+ events; Victoria Park tennis redevelopment study",
+      "departments": [
+        "cstb",
+        "ceo"
+      ],
+      "themes": [
+        "sports",
+        "culture-tourism"
+      ],
+      "summary": "啟德體育園已舉辦逾170場國際及本地體育和文化娛樂盛事，累計吸引超過260萬觀眾人次；2025年主場館票務銷量與票房收入均為亞洲第一。政府研究把維多利亞公園網球主場重建為全天候多用途場館，以承接更高級別賽事；香港體育學院推出為期三年「體育行政人員培訓計劃」，推動「體育+盛事」與人才梯隊並行。",
+      "interview_angles": [
+        "啟德盛事經濟如何惠及鄰近社區商戶？",
+        "維園網球場重建對公眾康體空間的替代安排是什麼？",
+        "體育行政培訓如何與體育總會管治改革銜接？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#sports",
+      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
+    },
+    {
+      "id": "20260916-gba-rules",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：成立粵港澳規則銜接專組　深化大灣區建設",
+      "title_en": "2026 Policy Address: GBA rules/mechanism docking task force",
+      "departments": [
+        "ceo",
+        "cedb"
+      ],
+      "themes": [
+        "national-development",
+        "governance"
+      ],
+      "summary": "政府提出深化粵港澳大灣區建設，支持前海和南沙重大合作平台，並成立「加快粵港澳三地規則銜接和機制對接專組」。配套包括推動「轉數快」年內接通銀聯便利跨境零售支付、以國家標準建設「心血管疾病綜合醫療中心」，以及參與編寫國家氫能標準並目標推出綠氫認證計劃，強化香港對接國家發展大局的角色。",
+      "interview_angles": [
+        "規則銜接專組的優先清單應如何訂立？",
+        "支付互通與數據跨境的私隱／安全邊界如何拿捏？",
+        "前海、南沙平台發展對香港產業空心化風險如何回應？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#gba",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-ev-2035",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：電動車逾18萬輛　2035年停止新登記燃油私家車",
+      "title_en": "2026 Policy Address: 180 000+ EVs; stop new petrol private cars by 2035",
+      "departments": [
+        "eeb",
+        "ceo"
+      ],
+      "themes": [
+        "environment-climate",
+        "transport-logistics"
+      ],
+      "summary": "現時電動車超過18萬輛，每10輛新登記私家車逾七輛為電動車；公共充電樁約17 300支，整體可支援逾27萬輛，目標五年內高速充電樁增至5 000支。政府將於2035年停止新登記燃油私家車，並於2027年建成首個ChaoJi充電技術示範站。可持續航空燃料（SAF）生產基地落戶東莞，目標2030年前投產，並籌劃在港建設首個SAF混合設施。",
+      "interview_angles": [
+        "2035年停登記燃油私家車對基層車主與二手車市場如何緩衝？",
+        "充電「可支援27萬輛」與實際可用率／損壞率如何核實？",
+        "SAF東莞基地與本港航空減碳責任如何分工？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#ev",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
+    },
+    {
+      "id": "20260916-elderly-care-boost",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：增加長者社區及院舍照顧服務券與設施",
+      "title_en": "2026 Policy Address: Expand elderly community and residential care",
+      "departments": [
+        "lwb",
+        "ceo"
+      ],
+      "themes": [
+        "elderly-care",
+        "poverty-welfare"
+      ],
+      "summary": "2026年《施政報告》貫徹「居家安老為本，院舍照顧為後援」，提出在2027-28財政年度增加2 000張「長者社區照顧服務券」至18 000張、增加1 000張「長者院舍照顧服務券」至8 000張；新增五個資助長者日間護理設施（約200個名額）、五個長者鄰舍中心（預計每年服務約5 000人），以及三家安老院（約400個宿位）。另預留1億元推出「安老科技推廣計劃」。",
+      "interview_angles": [
+        "服務券擴容後，社區照顧人手與質素如何跟上數量增長？",
+        "「居家安老」與新增院舍宿位的資源比例，是否足以應對高齡化高峰？",
+        "1億元安老科技推廣計劃如何確保產品真正惠及基層長者而非只惠及供應商？",
+        "五個長者鄰舍中心每年服務約5 000人，如何避免變成「活動多、持續照顧少」？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-edu-hub-iang",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：延長大灣區校園畢業生留港就業安排並擴容研究院學額",
+      "title_en": "2026 Policy Address: extend GBA campus IANG; expand research postgraduate places",
+      "departments": [
+        "edb",
+        "ceo"
+      ],
+      "themes": [
+        "education",
+        "national-development"
+      ],
+      "summary": "政府延長本港大學大灣區校園畢業生納入「非本地畢業生留港／回港就業安排」試行安排兩年；本財政年度內推售首幅學生宿舍用地；明年內批出用地發展國際學校。教資會資助研究院研究課程學額增加約30%至9 600個（2030/31學年），「香港博士研究生獎學金計劃」名額亦逐步上調。措施把國際教育樞紐與大灣區人才環流綁定。",
+      "interview_angles": [
+        "延長大灣區校園畢業生留港安排，對本地畢業生就業觀感有何影響？",
+        "學額擴容與宿舍供應時序如何匹配？",
+        "國際學校用地如何平衡本地學位需求？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#edu",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-digital-steam-edu",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：推動中小學數字教育及STEAM",
+      "title_en": "2026 Policy Address: Digital and STEAM education in schools",
+      "departments": [
+        "edb",
+        "ceo"
+      ],
+      "themes": [
+        "education",
+        "digital-gov",
+        "innovation"
+      ],
+      "summary": "2026年《施政報告》提出按《中小學數字教育發展藍圖》推進數字教育及STEAM，包括推出包含AI大語言模型的免費數字教育學習資源大平台、逐步拓展「AI教學助理」、優化中小學資訊和創新科技課程銜接，以及預留優質教育基金撥款推動幼稚園教育行政數字化。措施對接國家「十五五」教育數字化戰略，並配合教師專業發展及應用科學大學推廣。",
+      "interview_angles": [
+        "免費AI學習資源平台如何處理數據私隱、學業公平及教師工作量？",
+        "數字教育投入如何量度成效（學習成果 vs 設備覆蓋）？",
+        "幼稚園行政數字化與中小學STEAM之間，資源優先次序應如何訂？",
+        "若城鄉／校際數碼落差擴大，政府有何補底措施？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
+    },
+    {
+      "id": "20260916-ai-city-brain",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：建設「AI城市大腦」並優化1823服務",
+      "title_en": "2026 Policy Address: AI City Brain and 1823 service upgrade",
+      "departments": [
+        "ceo",
+        "itib",
+        "sb"
+      ],
+      "themes": [
+        "digital-gov",
+        "fintech-ai",
+        "governance"
+      ],
+      "summary": "政府將建設「AI城市大腦」綜合城市管理系統，連結工務、環境、交通、應急等大數據，提升日常管理及突發事件處理能力，並成立工作組推進；首階段保安局緊急事故監察及支援中心數碼基建將接入。同時以「轉介快、辦得成」優化1823，授權牽頭部門統籌跨部門個案，以AI識別重複問題，推動由「投訴後治理」轉向「未投訴已治理」。",
+      "interview_angles": [
+        "跨部門數據共享的最大障礙是權責還是技術標準？",
+        "「未投訴已治理」如何避免過度監控觀感？",
+        "AI城市大腦的成效指標應如何訂立？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#aicity",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
+    },
+    {
+      "id": "20260916-30k-youth-jobs",
+      "date": "2026-09-16",
+      "title": "2026年《施政報告》：推出為期兩年「三萬青年職位及實習計劃」",
+      "title_en": "2026 Policy Address: 30 000 Youth Employment and Internship Programme",
+      "departments": [
+        "hyab",
+        "lwb",
+        "ceo"
+      ],
+      "themes": [
+        "youth",
+        "labour",
+        "innovation"
+      ],
+      "summary": "政府聯同商界推出為期兩年的「三萬青年職位及實習計劃」：商界兩年內額外提供1萬個六個月或以上全職職位，政府承擔每月6,000元或不逾月薪三分之一的部分薪酬（為期六個月）；擴大創科實習及青年初創實習，兩年內逾1萬個名額、每人資助不少於11,000元；建造業在職培訓津貼兩年共1萬名額；金發局提供1 000個金融服務青年實習職位。另成立「國際青年人才交流基地」及推出「民青局—聯合國青年領袖實習計劃」。",
+      "interview_angles": [
+        "三萬名額中「全職職位」與「實習」比例，能否真正改善青年長期就業？",
+        "政府代付部分薪酬會否扭曲市場工資或擠出非資助職位？",
+        "如何防止僱主重複申請、短期榨取津貼後不續聘？",
+        "與《青年發展藍圖》已推逾290項措施的關係：增量成效如何評估？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html",
+      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
     {
       "id": "20260902-poverty-commission",
@@ -773,6 +1373,27 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20260825-cmhhk-inpatient",
+      "date": "2026-08-25",
+      "title": "香港中醫醫院十二月中起開展24小時住院服務",
+      "title_en": "Chinese Medicine Hospital to launch 24-hour inpatient services in mid-December",
+      "departments": [
+        "hhb"
+      ],
+      "themes": [
+        "healthcare",
+        "innovation"
+      ],
+      "summary": "醫務衞生局與香港中醫醫院公布，醫院由2026年12月11日起分階段開展24小時住院服務，首階段設93張住院病床、20張臨床試驗及研究中心病床和兩張加護病床，預計2030年年底提供共400張病床。門診量目標由開院首年14萬人次增至翌年逾26萬人次；自願醫保計劃將由2027年3月起有序推出涵蓋中醫醫院住院的「認可產品（中醫）」。",
+      "interview_angles": [
+        "中醫住院納入自願醫保，如何確保保費可負擔與索償清晰？",
+        "93張病床起步相對需求是否過慎，還是質素優先的正確策略？",
+        "中西醫協作在急重症分流上的臨床路徑如何訂立？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500318.htm",
+      "source_name": "info.gov.hk / Health Bureau"
+    },
+    {
       "id": "20260813-hung-shui-kiu-logistics",
       "date": "2026-08-13",
       "title": "政府邀請市場就洪水橋／厦村現代物流叢集用地提交意向",
@@ -818,6 +1439,29 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20260616-gd-rcs-29",
+      "date": "2026-06-16",
+      "title": "「廣東院舍照顧服務計劃」認可安老院增至二十九家",
+      "title_en": "Residential Care Services Scheme in Guangdong expands to 29 homes",
+      "departments": [
+        "swd",
+        "lwb"
+      ],
+      "themes": [
+        "elderly-care",
+        "national-development",
+        "poverty-welfare"
+      ],
+      "summary": "社會福利署宣布由2026年7月1日起，「廣東院舍照顧服務計劃」新增三家位於深圳及東莞的認可安老院，另有一家現有機構擴大服務範圍。連同現有二十六家，參加計劃的安老院總數增至二十九家，為有意於大灣區養老的香港長者提供更多資助護理宿位選擇。中央輪候冊上的合資格長者可向跟進工作人員申請。",
+      "interview_angles": [
+        "跨境養老的醫療銜接、探訪交通與突發事故應變如何保障？",
+        "增至29家院舍後，質素監管與投訴機制是否足以建立長者及家屬信心？",
+        "計劃對本地院舍輪候壓力的實質紓緩幅度如何量度？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202606/16/P2026061600269.htm",
+      "source_name": "info.gov.hk / Social Welfare Department"
+    },
+    {
       "id": "20260520-carf",
       "date": "2026-05-20",
       "title": "加密資產申報框架及經修訂共同匯報標準條例草案將刊憲",
@@ -840,6 +1484,26 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20260501-min-wage-43-1",
+      "date": "2026-05-01",
+      "title": "法定最低工資調升至每小時43.1元生效",
+      "title_en": "Statutory minimum wage rises to $43.1 per hour",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour"
+      ],
+      "summary": "由2026年5月1日起，法定最低工資由每小時42.1元調升至43.1元，適用於絕大多數僱員（留宿家庭傭工及訂明學員等除外）。《僱傭條例》下僱主須記錄總工作時數的每月工資金額上限，同步由17,200元提高至17,600元。殘疾僱員可選擇生產能力評估安排。調薪反映每年檢討機制下對通脹與經濟表現的回應。",
+      "interview_angles": [
+        "每小時調升1元對基層實質購買力與中小企成本的淨效應如何？",
+        "工時紀錄門檻上調至17,600元，執法能否跟上？",
+        "最低工資與「再就業津貼」、輸入勞工政策如何協調避免訊號混亂？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202605/01/P2026043000260.htm",
+      "source_name": "info.gov.hk / Labour Department"
+    },
+    {
       "id": "20260324-nm-consult",
       "date": "2026-03-24",
       "title": "加快北部都會區發展專法公眾諮詢展開",
@@ -859,6 +1523,158 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202603/24/P2026032400383.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20260121-platform-workers-comp",
+      "date": "2026-01-21",
+      "title": "政府推進數碼平台工作者工傷補償立法　今年內冀交立法會",
+      "title_en": "Government advancing legislation on platform workers' work injury compensation",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour",
+        "legislation"
+      ],
+      "summary": "勞福局回覆立法會指出，政府按2025年《施政報告》以立法完善數碼平台工作者工傷補償，已成立政府、平台公司及勞工團體三方小組。立法建議先聚焦食物及貨物送遞平台工作者，參考《僱員補償條例》，目標提供明確法律基礎並顧及平台可持續營運，計劃於2026年內向立法會提交建議。政府暫未以立法統一界定平台僱傭關係，優先處理工傷保障。",
+      "interview_angles": [
+        "只立法工傷、不釐清僱傭關係，會否留下社會保障缺口？",
+        "補償水平若低於《僱員補償條例》，如何說服勞工團體接受？",
+        "平台商業模式快速變化，法例如何保持前瞻而不窒礙創新？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202601/21/P2026012100223.htm",
+      "source_name": "info.gov.hk / Labour and Welfare Bureau"
+    },
+    {
+      "id": "20251223-iamsmart-4m",
+      "date": "2025-12-23",
+      "title": "「智方便」登記用戶突破400萬　推進政府服務「一網通辦」",
+      "title_en": "iAM Smart users exceed 4 million; single portal for e-government",
+      "departments": [
+        "dpo",
+        "itib"
+      ],
+      "themes": [
+        "digital-gov",
+        "governance"
+      ],
+      "summary": "數字政策辦公室公布「智方便」登記用戶超過400萬，每日使用量逾18萬人次，接達超過1 300項政府及公私營網上服務與電子表格，實現「一網通辦」。平台已推出「小程序平台」整合部門流動應用程式，並提供個人碼、待辦事項及帳單繳付等功能；當時計劃於2026年年底推出「AI助手」。數字辦亦推動金融機構採用「多重身份認證」加強核實。",
+      "interview_angles": [
+        "400萬用戶中活躍度與長者／數碼弱勢群體覆蓋率如何？",
+        "部門App整併至小程序後，如何避免「入口統一但體驗分裂」？",
+        "身份認證強化與便利性之間，市民投訴最多的痛點是什麼？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202512/23/P2025122300271.htm",
+      "source_name": "info.gov.hk / Digital Policy Office"
+    },
+    {
+      "id": "20251118-ydc-20th",
+      "date": "2025-11-18",
+      "title": "青年發展委員會第二十次會議：青年人才培養與大灣區創業支援",
+      "title_en": "Youth Development Commission 20th meeting: talent training and GBA entrepreneurship",
+      "departments": [
+        "csso",
+        "hyab"
+      ],
+      "themes": [
+        "youth",
+        "national-development"
+      ],
+      "summary": "政務司司長主持青年發展委員會第二十次會議，聽取2025年《施政報告》青年措施，包括青年人才培養計劃（國際組織實習與會議、傳媒專題內地實習、青年理財教育、調解工作坊）。民青局介紹大灣區香港青年創新創業基地聯盟已匯聚70個成員，並推進粵港澳大灣區青年創業資助計劃及創新創業基地體驗資助計劃，為青年初創提供資本資助、孵化及內地考察支援。",
+      "interview_angles": [
+        "大灣區創業聯盟70個成員的「一站式」支援，青年實際使用率與存活率如何？",
+        "國際組織實習名額有限，如何確保基層青年有公平機會？",
+        "青年理財教育與創業資助如何避免「鼓勵冒險卻缺乏風險意識」？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202511/18/P2025111800622.htm",
+      "source_name": "info.gov.hk / HYAB / CSSO"
+    },
+    {
+      "id": "20250917-qef-digital-edu",
+      "date": "2025-09-17",
+      "title": "2025年《施政報告》：優質教育基金預留20億元支援中小學數字教育",
+      "title_en": "2025 Policy Address: $2 billion QEF for digital education",
+      "departments": [
+        "edb",
+        "ceo"
+      ],
+      "themes": [
+        "education",
+        "digital-gov"
+      ],
+      "summary": "2025年《施政報告》提出優質教育基金預留20億元支援中小學數字教育，並預計於2026年發表《中小學數字教育藍圖》。同時強調深化國際教育樞紐建設，增加非本地生自費學額及學生宿舍配套，並加大打擊違規提供文憑試課程或「借殼辦學」。數字教育撥款為後續藍圖及AI教學工具鋪路。",
+      "interview_angles": [
+        "20億元數字教育撥款應如何分配（基建、教師培訓、課程內容）才具可持續性？",
+        "打擊「借殼辦學」與吸引國際學生之間，如何平衡監管與開放？",
+        "與2026年數字教育藍圖如何銜接，避免「撥款先、策略後」？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html",
+      "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
+    },
+    {
+      "id": "20250917-elderly-700",
+      "date": "2025-09-17",
+      "title": "2025年《施政報告》：新增700個資助安老宿位及每年5億元照顧者支援",
+      "title_en": "2025 Policy Address: 700 new subsidised RCH places; $500m annual carer support",
+      "departments": [
+        "lwb",
+        "ceo"
+      ],
+      "themes": [
+        "elderly-care",
+        "poverty-welfare"
+      ],
+      "summary": "2025年《施政報告》提出新增700個新建資助安老宿位、4 000張長者社區照顧服務券及1 000張長者院舍照顧服務券；增加三間長者鄰舍中心；擴展「廣東院舍照顧服務計劃」網絡。政府預留每年5億元經常開支加強照顧者支援，並設立「社會高齡化對策工作組」，涵蓋安老、醫療、房屋、樂齡科技及銀髮經濟。",
+      "interview_angles": [
+        "每年5億元照顧者支援如何精準投放？",
+        "高齡化對策工作組如何避免跨局政策各自為政？",
+        "服務券與實物宿位並行下，市民應如何選擇？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html#elderly",
+      "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
+    },
+    {
+      "id": "20250917-culture-muslim",
+      "date": "2025-09-17",
+      "title": "2025年《施政報告》：文體旅協同發展與穆斯林旅遊配套",
+      "title_en": "2025 Policy Address: culture-tourism synergy and Muslim-friendly travel",
+      "departments": [
+        "cstb",
+        "ceo"
+      ],
+      "themes": [
+        "culture-tourism"
+      ],
+      "summary": "2025年《施政報告》提出打造高端藝術品交易樞紐、年內啟用西九碼頭、成立「西九文化區學院」；推廣高端遊艇旅遊並優化訪港遊艇入境流程。獲得清真認證的餐廳可獲資助50%認證費（上限5,000元），促進穆斯林旅遊。措施把文化硬件、遊艇經濟與多元客源開發一併推進。",
+      "interview_angles": [
+        "清真認證資助上限5,000元是否足以改變供給？",
+        "遊艇泊位擴張與公眾親海權如何平衡？",
+        "西九碼頭如何把人流導向文化場館？"
+      ],
+      "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html#culture",
+      "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
+    },
+    {
+      "id": "20250501-mpf-offset-abolition",
+      "date": "2025-05-01",
+      "title": "取消強積金「對沖」安排生效　推出25年資助計劃分擔僱主支出",
+      "title_en": "MPF offsetting abolition takes effect; 25-year subsidy scheme for employers",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour",
+        "finance",
+        "legislation"
+      ],
+      "summary": "取消強積金「對沖」安排於2025年5月1日（轉制日）生效：僱主不得再以強制性供款累算權益抵銷轉制日後僱用期所衍生的遣散費／長期服務金；轉制日前權益仍可對沖。勞工處同日推出為期25年的資助計劃，僱主先依法支付遣散費／長服金後可申請資助。安排同樣適用於職業退休計劃及相關學校公積金等。",
+      "interview_angles": [
+        "25年資助計劃的財政可持續性與道德風險（鼓勵遣散）如何防範？",
+        "取消對沖對中小企現金流與正式僱傭意願的短期衝擊有多大？",
+        "僱員實質退休保障改善幅度如何追蹤？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202505/01/P2025043000322.htm",
+      "source_name": "info.gov.hk / Labour Department"
     }
   ]
 }
